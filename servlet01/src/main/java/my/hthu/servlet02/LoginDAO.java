@@ -4,15 +4,9 @@ package my.hthu.servlet02;
 import java.io.*;
 import java.sql.*;
 import java.util.Properties;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.core.env.Environment;
 
-@ConfigurationProperties
 public class LoginDAO {
-
-    @Autowired
-    private Environment env;
 
     public boolean checkValidate(String username, String password) throws ClassNotFoundException, IOException {
 
